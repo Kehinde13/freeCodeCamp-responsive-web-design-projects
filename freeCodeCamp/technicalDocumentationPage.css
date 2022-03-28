@@ -1,0 +1,144 @@
+body{
+    min-width: 290px;
+    line-height: 1.5;
+    padding: 0 20px;
+ }
+ 
+ nav{
+     position: fixed;
+     min-width: 200px;  
+     width: 300px;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     overflow-y: auto;
+ }
+ header h1{
+     color: black;
+     margin: 10px;
+     text-align: center;
+     font-size: 1.8em;
+     font-weight: thin;
+     margin-top: 0px;
+ }
+ 
+ #main-doc header {
+     text-align: left;
+     margin: 0px;
+ }
+ nav header{
+     width: 100%;
+     background: cyan;
+     padding:5px 0;
+     margin-bottom: 0;
+     margin-left: 0; 
+ }
+ 
+ nav ul{
+     background: #666666;
+     padding: 0;
+     margin-top: 0;
+     margin-botttom: 100px;
+ }
+ nav li{
+     list-style: none;
+     position: relative;
+     width: 100%;  
+ }
+ nav a{
+     display: block;
+     text-decoration: none;
+     padding: 10px 30px;
+     color: #ffffff;
+     cursor: pointer;
+ }
+ #main-doc{
+     position: absolute;
+     margin-left: 310px;
+     padding: 20px;
+     margin-bottom: 110px;
+ }
+ section article{
+     margin: 15px;
+     font-size: 0.96em;
+ }
+ section li{
+     margin: 15px 0px 0px 20px;
+ }
+ code{
+     display: block;
+     text-align: left;
+     white-space: pre-line;
+     position: relative;
+     word-break: normal;
+     word-wrap: normal;
+     line-height: 2;
+     background-color: #ddd;
+     padding: 15px;
+     margin: 10px;
+     border-radius: 5px;
+ }
+ .burger{
+   display: none;
+ }
+ @media only screen and (max-width: 815px){
+     nav {
+         position: fixed;
+         z-index: 1;
+     }
+     #main-doc{
+         position: relative;
+         margin-left: 0px;
+         margin-top: 50px;
+     }
+     nav ul{
+         display: none ; 
+         transition: ease-in 0.3s;
+     }
+     nav ul.open{
+         display: block;
+     }
+     .burger{
+     display: block;
+     font-size: 1.5em;
+     cursor: pointer;
+   }
+    .burger span{
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #ddd;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        transition: all ease-in 0.3s;
+    }
+    .burger.open span:nth-child(1){
+       transform: rotate(45deg) translateY(12px);
+    }
+    .burger.open span:nth-child(2){
+        opacity: 0;
+        width: 0;
+     }
+     .burger.open span:nth-child(3){
+        transform: rotate(-45deg) translateY(-12px);
+     }
+   header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+ }
+ @media only screen and (max-width: 400px){
+     #main-doc{
+         margin-left: -10px;
+     }
+     code{
+         margin-left: -20px;
+         width: 100%;
+         padding: 15px;
+         padding-left: 10px;
+         padding-right: 45px;
+         min-width: 200px;
+     }
+ }
+ 

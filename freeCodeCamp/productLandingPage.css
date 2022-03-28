@@ -1,0 +1,130 @@
+body{
+    background: #aaa;
+    font-family: Raleway, sans-serif;
+}
+#main{
+    position: relative;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+footer > p{
+    font-size: 14px;
+}
+img{
+  width: 100px;
+  margin-top: 10px
+}
+header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #aaa;
+}
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  
+nav > ul {
+    margin-right: 30px; 
+}
+#hero{
+    margin-top: 180px;
+}
+#email{
+    max-width:275px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+#submit{
+    margin: 15px 0;
+    max-width: 150px;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    font-weight: 700;
+    border-radius: 10px;
+}
+#features{
+    margin-top: 50px;
+    padding: 10px;
+}
+.C-class{
+    padding: 0px 20px 50px;
+    border: 10px solid #ccc;
+}
+.C-class > ol > li{
+    margin: 10px;
+}
+.btn{
+    margin: 15px 0;
+    max-width: 150px;
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #90caf9;
+}
+.btn:hover{
+    background: #2196f3;
+    transition: 1s;
+}
+footer > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li{
+    padding: 0 10px;
+}
+footer > p{
+    text-align: right;
+}
+iframe{
+   width: 100%;
+   margin: 50px 0;
+}
+@media(min-width: 700px){
+     header {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+     }
+     nav > ul {
+         display: flex;
+         justify-content: flex-end;
+         margin-right: 50px;
+     }
+     nav > ul > li{
+         padding: 0 10px;
+     }
+     #features{
+         text-align: left;
+     }
+     #pricing{
+         display: flex;
+         justify-content: space-around;
+     }
+     footer{
+         padding: 20px 20px 0;
+     }
+     #hero{
+         margin-top:100px;
+     }
+     iframe{
+        width: 50%;
+     }
+}
